@@ -3,8 +3,8 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Tue Nov 18 18:27:40 2025
-# Process ID: 10380
+# Start of session at: Tue Nov 18 19:06:26 2025
+# Process ID: 28504
 # Current directory: C:/Facultate/Anul3/SSC/Proiect/rear_and_avoidance/rear_and_avoidance.runs/synth_1
 # Command line: vivado.exe -log top_system.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_system.tcl
 # Log file: C:/Facultate/Anul3/SSC/Proiect/rear_and_avoidance/rear_and_avoidance.runs/synth_1/top_system.vds
@@ -19,6 +19,6 @@
 # Host memory       :16780 MB
 # Swap memory       :14495 MB
 # Total Virtual     :31276 MB
-# Available Virtual :9416 MB
+# Available Virtual :9732 MB
 #-----------------------------------------------------------
 source top_system.tcl -notrace

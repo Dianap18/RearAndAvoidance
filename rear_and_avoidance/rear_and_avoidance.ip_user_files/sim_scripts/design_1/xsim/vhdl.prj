@@ -26,6 +26,7 @@ vhdl xil_defaultlib  \
 "../../../bd/design_1/ip/design_1_axi_gpio_0_7/sim/design_1_axi_gpio_0_7.vhd" \
 "../../../bd/design_1/ip/design_1_axi_gpio_0_8/sim/design_1_axi_gpio_0_8.vhd" \
 "../../../bd/design_1/ip/design_1_axi_gpio_0_9/sim/design_1_axi_gpio_0_9.vhd" \
+"../../../bd/design_1/ip/design_1_axi_gpio_0_10/sim/design_1_axi_gpio_0_10.vhd" \
 
 # Do not sort compile order
 nosort

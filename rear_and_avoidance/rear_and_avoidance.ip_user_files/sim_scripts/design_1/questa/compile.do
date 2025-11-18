@@ -138,14 +138,17 @@ vcom -work xil_defaultlib  -93  \
 "../../../bd/design_1/ip/design_1_axi_gpio_0_8/sim/design_1_axi_gpio_0_8.vhd" \
 "../../../bd/design_1/ip/design_1_axi_gpio_0_9/sim/design_1_axi_gpio_0_9.vhd" \
 
-vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../rear_and_avoidance.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../rear_and_avoidance.gen/sources_1/bd/design_1/ipshared/b28c/hdl" "+incdir+C:/XilinxVivado/Vivado/2024.1/data/xilinx_vip/include" \
-"../../../bd/design_1/sim/design_1.v" \
-
 vlog -work axi_protocol_converter_v2_1_31  -incr -mfcu  "+incdir+../../../../rear_and_avoidance.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../rear_and_avoidance.gen/sources_1/bd/design_1/ipshared/b28c/hdl" "+incdir+C:/XilinxVivado/Vivado/2024.1/data/xilinx_vip/include" \
 "../../../../rear_and_avoidance.gen/sources_1/bd/design_1/ipshared/3c06/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
 
 vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../rear_and_avoidance.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../rear_and_avoidance.gen/sources_1/bd/design_1/ipshared/b28c/hdl" "+incdir+C:/XilinxVivado/Vivado/2024.1/data/xilinx_vip/include" \
 "../../../bd/design_1/ip/design_1_auto_pc_0/sim/design_1_auto_pc_0.v" \
+
+vcom -work xil_defaultlib  -93  \
+"../../../bd/design_1/ip/design_1_axi_gpio_0_10/sim/design_1_axi_gpio_0_10.vhd" \
+
+vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../rear_and_avoidance.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../rear_and_avoidance.gen/sources_1/bd/design_1/ipshared/b28c/hdl" "+incdir+C:/XilinxVivado/Vivado/2024.1/data/xilinx_vip/include" \
+"../../../bd/design_1/sim/design_1.v" \
 
 vlog -work xil_defaultlib \
 "glbl.v"
