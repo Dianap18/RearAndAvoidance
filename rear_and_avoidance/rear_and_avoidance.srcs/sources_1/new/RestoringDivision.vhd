@@ -6,7 +6,7 @@ use ieee.std_logic_unsigned.all;
 entity RestoringDivision is
     generic (
         N_QUOTIENT : integer := 12; 
-        N_DIVIDEND : integer := 25  
+        N_DIVIDEND : integer := 25  -- pentru ca primi pot*255
     );
     port (
         clk      : in  std_logic;
@@ -21,25 +21,27 @@ end entity RestoringDivision;
 
 architecture Behavioral of RestoringDivision is
     
-    constant N_AM : integer := N_QUOTIENT; 
-    constant N_AM_EXT : integer := N_QUOTIENT + 1; 
+    constant N_AM : integer := N_QUOTIENT; -- dim impart
+    constant N_AM_EXT : integer := N_QUOTIENT + 1; -- extinsa cu un bit
 
     type state_type is (S_ASTEPTARE, S_CALCUL, S_FINAL);
     signal state  : state_type;
     
-    signal A      : std_logic_vector(N_AM_EXT-1 downto 0);
+    signal A      : std_logic_vector(N_AM_EXT-1 downto 0); -- rest partial 
     
-    signal M      : std_logic_vector(N_AM_EXT-1 downto 0); 
+    signal M      : std_logic_vector(N_AM_EXT-1 downto 0); -- divizor
     
-    signal Q      : std_logic_vector(N_QUOTIENT-1 downto 0); 
+    signal Q      : std_logic_vector(N_QUOTIENT-1 downto 0); -- cat
     
-    signal R : std_logic_vector(N_DIVIDEND-1 downto 0); 
+    signal R : std_logic_vector(N_DIVIDEND-1 downto 0); -- rest
 
     signal contor : integer range 0 to N_QUOTIENT; 
 
 begin
     process(clk, resetare)
+    -- val curenta a res inainte si dupa operatie, pentur restore
         variable A_prim, A_partial : std_logic_vector(N_AM_EXT-1 downto 0);
+        -- val curenta a deimp
         variable R_partial : std_logic_vector(N_DIVIDEND-1 downto 0);
         variable currentCont : integer range 0 to N_QUOTIENT;
     begin
@@ -56,11 +58,12 @@ begin
                 when S_ASTEPTARE =>
                     if start = '1' then
                         R <= dividend;
-                        
                         M <= (others => '0');
+                        -- il punem pe bitii de jos
                         M(N_QUOTIENT-1 downto 0) <= divisor;
+                        -- il dacem negativ
                         M <= (not M) + 1; 
-                        
+                        gata <= '0';
                         Q <= (others => '0'); 
                         A <= (others => '0'); 
                         contor <= N_QUOTIENT; 
@@ -72,7 +75,9 @@ begin
                     A_partial := A;
                     R_partial := R;
                 
+                    -- shiftare la stanga
                     A_prim := A_partial(N_AM_EXT-2 downto 0) & R_partial(N_DIVIDEND-1);
+                    -- shiftam si deimpartitul si presupunem ca ultimul bit e 0
                     R_partial(N_DIVIDEND-1 downto 1) := R_partial(N_DIVIDEND-2 downto 0);
                     R_partial(0) := '0'; 
 
@@ -80,6 +85,7 @@ begin
 
                     A_prim := A_prim + M; 
 
+                    -- logica de verificare pentru ultimul bit
                     if A_prim(N_AM_EXT-1) = '1' then 
                         A_prim := A_partial;
                         R_partial(0) := '0'; 
@@ -96,7 +102,8 @@ begin
                     if currentCont = 0 then
                         state <= S_FINAL;
                     end if;
-
+                    
+                -- ignoram restul partial pentru ca nu avem nevoie de el
                 when S_FINAL =>
                     quotient <= R(N_QUOTIENT-1 downto 0);
                     gata     <= '1';

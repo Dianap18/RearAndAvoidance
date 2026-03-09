@@ -1,0 +1,25 @@
+
+*** Running vivado
+    with args -log design_1_axi_gpio_0_9.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_axi_gpio_0_9.tcl
+
+
+
+****** Vivado v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Tue Nov 18 19:48:37 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source design_1_axi_gpio_0_9.tcl -notrace
+create_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 569.410 ; gain = 239.383
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axi_gpio_0_9
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry e739df64fb2e5b00 to dir: C:/Facultate/Anul3/SSC/Proiect/rear_and_avoidance/rear_and_avoidance.runs/design_1_axi_gpio_0_9_synth_1
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Facultate/Anul3/SSC/Proiect/rear_and_avoidance/rear_and_avoidance.cache/ip/2024.1/e/7/e739df64fb2e5b00/design_1_axi_gpio_0_0.dcp to C:/Facultate/Anul3/SSC/Proiect/rear_and_avoidance/rear_and_avoidance.runs/design_1_axi_gpio_0_9_synth_1/design_1_axi_gpio_0_9.dcp.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Facultate/Anul3/SSC/Proiect/rear_and_avoidance/rear_and_avoidance.cache/ip/2024.1/e/7/e739df64fb2e5b00/design_1_axi_gpio_0_0_sim_netlist.v to C:/Facultate/Anul3/SSC/Proiect/rear_and_avoidance/rear_and_avoidance.runs/design_1_axi_gpio_0_9_synth_1/design_1_axi_gpio_0_9_sim_netlist.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Facultate/Anul3/SSC/Proiect/rear_and_avoidance/rear_and_avoidance.cache/ip/2024.1/e/7/e739df64fb2e5b00/design_1_axi_gpio_0_0_sim_netlist.vhdl to C:/Facultate/Anul3/SSC/Proiect/rear_and_avoidance/rear_and_avoidance.runs/design_1_axi_gpio_0_9_synth_1/design_1_axi_gpio_0_9_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Facultate/Anul3/SSC/Proiect/rear_and_avoidance/rear_and_avoidance.cache/ip/2024.1/e/7/e739df64fb2e5b00/design_1_axi_gpio_0_0_stub.v to C:/Facultate/Anul3/SSC/Proiect/rear_and_avoidance/rear_and_avoidance.runs/design_1_axi_gpio_0_9_synth_1/design_1_axi_gpio_0_9_stub.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Facultate/Anul3/SSC/Proiect/rear_and_avoidance/rear_and_avoidance.cache/ip/2024.1/e/7/e739df64fb2e5b00/design_1_axi_gpio_0_0_stub.vhdl to C:/Facultate/Anul3/SSC/Proiect/rear_and_avoidance/rear_and_avoidance.runs/design_1_axi_gpio_0_9_synth_1/design_1_axi_gpio_0_9_stub.vhdl.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_1_axi_gpio_0_9, cache-ID = e739df64fb2e5b00.
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 18 19:49:06 2025...

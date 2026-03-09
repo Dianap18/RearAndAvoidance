@@ -2,7 +2,7 @@
 //Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-//Date        : Tue Nov 18 19:03:44 2025
+//Date        : Thu Dec 18 17:59:44 2025
 //Host        : Zbook running 64-bit major release  (build 9200)
 //Command     : generate_target design_1_wrapper.bd
 //Design      : design_1_wrapper
@@ -32,7 +32,7 @@ module design_1_wrapper
     FIXED_IO_ps_clk,
     FIXED_IO_ps_porb,
     FIXED_IO_ps_srstb,
-    leds_4bits_tri_o,
+    leds_4bits,
     vaux14n,
     vaux14p,
     vaux15n,
@@ -62,7 +62,7 @@ module design_1_wrapper
   inout FIXED_IO_ps_clk;
   inout FIXED_IO_ps_porb;
   inout FIXED_IO_ps_srstb;
-  output [3:0]leds_4bits_tri_o;
+  output [3:0]leds_4bits;
   input vaux14n;
   input vaux14p;
   input vaux15n;
@@ -93,7 +93,7 @@ module design_1_wrapper
   wire FIXED_IO_ps_clk;
   wire FIXED_IO_ps_porb;
   wire FIXED_IO_ps_srstb;
-  wire [3:0]leds_4bits_tri_o;
+  wire [3:0]leds_4bits;
   wire vaux14n;
   wire vaux14p;
   wire vaux15n;
@@ -125,7 +125,7 @@ module design_1_wrapper
         .FIXED_IO_ps_clk(FIXED_IO_ps_clk),
         .FIXED_IO_ps_porb(FIXED_IO_ps_porb),
         .FIXED_IO_ps_srstb(FIXED_IO_ps_srstb),
-        .leds_4bits_tri_o(leds_4bits_tri_o),
+        .leds_4bits(leds_4bits),
         .vaux14n(vaux14n),
         .vaux14p(vaux14p),
         .vaux15n(vaux15n),

@@ -7,7 +7,7 @@ entity conv_pwm_int is
         clk      : in  std_logic;
         reset    : in  std_logic;
         start    : in  std_logic;
-        in_val   : in  std_logic_vector(11 downto 0);  
+        in_val   : in  std_logic_vector(11 downto 0);  -- pe 12 biti pentru ca aia e precizia XADC 
         pwm_val  : out std_logic_vector(7 downto 0); 
         gata     : out std_logic
     );
@@ -52,7 +52,7 @@ begin
             resetare => reset,
             start    => start,
             a        => in_val,
-            b        => "000011111111", 
+            b        => "000011111111", --255
             rezultat => mult_out,
             gata     => mult_gata
         );
@@ -63,11 +63,12 @@ begin
             resetare  => reset,
             start     => mult_gata,
             dividend  => mult_out,        
-            divisor   => "111111111111",  
+            divisor   => "111111111111", --4095 
             quotient  => div_out,
             gata      => div_gata
         );
 
+    -- dam rezultatele mai departe
     pwm_val <= div_out(7 downto 0);
     gata    <= div_gata;
 

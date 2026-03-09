@@ -54,11 +54,15 @@ begin
                     end if;
                 
                 when CALCUL =>
+                -- bitul este 1 se adună multiplicand-ul curent la produs
+                -- daca nu, nu se aduna nimic
                     if multiplicator(0) = '1' then
                         produs <= produs + multiplicand; 
                     end if;
                     
+                    -- multiplicand se shiftează la stânga
                     multiplicand <= shift_left(multiplicand, 1); 
+                    -- multiplicator se shiftează la dreapta
                     multiplicator <= shift_right(multiplicator, 1);
                     
                     contor <= contor + 1; 

@@ -1,0 +1,518 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Wed Jan 21 10:37:23 2026
+# Process ID: 6276
+# Current directory: C:/Facultate/Anul3/SSC/Proiect/rear_and_avoidance/rear_and_avoidance.runs/design_1_pid_controller_0_0_synth_1
+# Command line: vivado.exe -log design_1_pid_controller_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_pid_controller_0_0.tcl
+# Log file: C:/Facultate/Anul3/SSC/Proiect/rear_and_avoidance/rear_and_avoidance.runs/design_1_pid_controller_0_0_synth_1/design_1_pid_controller_0_0.vds
+# Journal file: C:/Facultate/Anul3/SSC/Proiect/rear_and_avoidance/rear_and_avoidance.runs/design_1_pid_controller_0_0_synth_1\vivado.jou
+# Running On        :Zbook
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26100
+# Processor Detail  :13th Gen Intel(R) Core(TM) i5-13500H
+# CPU Frequency     :3187 MHz
+# CPU Physical cores:12
+# CPU Logical cores :16
+# Host memory       :16780 MB
+# Swap memory       :13421 MB
+# Total Virtual     :30202 MB
+# Available Virtual :4558 MB
+#-----------------------------------------------------------
+source design_1_pid_controller_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:25 . Memory (MB): peak = 572.090 ; gain = 240.562
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/XilinxVivado/Vivado/2024.1/data/ip'.
+Command: synth_design -top design_1_pid_controller_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Device 21-9227] Part: xc7z020clg400-1 does not have CEAM library.
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 14248
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1528.387 ; gain = 446.535
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_pid_controller_0_0' [c:/Facultate/Anul3/SSC/Proiect/rear_and_avoidance/rear_and_avoidance.gen/sources_1/bd/design_1/ip/design_1_pid_controller_0_0/synth/design_1_pid_controller_0_0.v:53]
+INFO: [Synth 8-638] synthesizing module 'pid_controller' [C:/Facultate/Anul3/SSC/Proiect/rear_and_avoidance/rear_and_avoidance.srcs/sources_1/new/top.vhd:23]
+	Parameter N bound to: 12 - type: integer 
+INFO: [Synth 8-3491] module 'conv_pwm_int' declared at 'C:/Facultate/Anul3/SSC/Proiect/rear_and_avoidance/rear_and_avoidance.srcs/sources_1/new/conv_pwm_int.vhd:5' bound to instance 'pwm_inst' of component 'conv_pwm_int' [C:/Facultate/Anul3/SSC/Proiect/rear_and_avoidance/rear_and_avoidance.srcs/sources_1/new/top.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'conv_pwm_int' [C:/Facultate/Anul3/SSC/Proiect/rear_and_avoidance/rear_and_avoidance.srcs/sources_1/new/conv_pwm_int.vhd:16]
+INFO: [Synth 8-3491] module 'inmultitor_shift_add' declared at 'C:/Facultate/Anul3/SSC/Proiect/rear_and_avoidance/rear_and_avoidance.srcs/sources_1/new/inmultitor_shift_add.vhd:6' bound to instance 'mult_inst' of component 'inmultitor_shift_add' [C:/Facultate/Anul3/SSC/Proiect/rear_and_avoidance/rear_and_avoidance.srcs/sources_1/new/conv_pwm_int.vhd:49]
+INFO: [Synth 8-638] synthesizing module 'inmultitor_shift_add' [C:/Facultate/Anul3/SSC/Proiect/rear_and_avoidance/rear_and_avoidance.srcs/sources_1/new/inmultitor_shift_add.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'inmultitor_shift_add' (0#1) [C:/Facultate/Anul3/SSC/Proiect/rear_and_avoidance/rear_and_avoidance.srcs/sources_1/new/inmultitor_shift_add.vhd:21]
+INFO: [Synth 8-3491] module 'RestoringDivision' declared at 'C:/Facultate/Anul3/SSC/Proiect/rear_and_avoidance/rear_and_avoidance.srcs/sources_1/new/RestoringDivision.vhd:6' bound to instance 'div_inst' of component 'RestoringDivision' [C:/Facultate/Anul3/SSC/Proiect/rear_and_avoidance/rear_and_avoidance.srcs/sources_1/new/conv_pwm_int.vhd:60]
+INFO: [Synth 8-638] synthesizing module 'RestoringDivision' [C:/Facultate/Anul3/SSC/Proiect/rear_and_avoidance/rear_and_avoidance.srcs/sources_1/new/RestoringDivision.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'RestoringDivision' (0#1) [C:/Facultate/Anul3/SSC/Proiect/rear_and_avoidance/rear_and_avoidance.srcs/sources_1/new/RestoringDivision.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'conv_pwm_int' (0#1) [C:/Facultate/Anul3/SSC/Proiect/rear_and_avoidance/rear_and_avoidance.srcs/sources_1/new/conv_pwm_int.vhd:16]
+INFO: [Synth 8-3491] module 'servo_pwm_gen' declared at 'C:/Facultate/Anul3/SSC/Proiect/rear_and_avoidance/rear_and_avoidance.srcs/sources_1/new/servo_pwm_gen.vhd:5' bound to instance 'servo_inst' of component 'servo_pwm_gen' [C:/Facultate/Anul3/SSC/Proiect/rear_and_avoidance/rear_and_avoidance.srcs/sources_1/new/top.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'servo_pwm_gen' [C:/Facultate/Anul3/SSC/Proiect/rear_and_avoidance/rear_and_avoidance.srcs/sources_1/new/servo_pwm_gen.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'servo_pwm_gen' (0#1) [C:/Facultate/Anul3/SSC/Proiect/rear_and_avoidance/rear_and_avoidance.srcs/sources_1/new/servo_pwm_gen.vhd:13]
+	Parameter KP_VALUE bound to: 32'b00111111100000000000000000000000 
+	Parameter KI_VALUE bound to: 32'b00111110000000000000000000000000 
+	Parameter KD_VALUE bound to: 32'b00000000000000000000000000000000 
+	Parameter TS_VALUE bound to: 32'b00111100001000111101011100001010 
+INFO: [Synth 8-3491] module 'pid_core' declared at 'C:/Facultate/Anul3/SSC/Proiect/rear_and_avoidance/rear_and_avoidance.srcs/sources_1/new/pid_core.vhd:5' bound to instance 'pid_inst' of component 'pid_core' [C:/Facultate/Anul3/SSC/Proiect/rear_and_avoidance/rear_and_avoidance.srcs/sources_1/new/top.vhd:79]
+INFO: [Synth 8-638] synthesizing module 'pid_core' [C:/Facultate/Anul3/SSC/Proiect/rear_and_avoidance/rear_and_avoidance.srcs/sources_1/new/pid_core.vhd:25]
+	Parameter KP_VALUE bound to: 32'b00111111100000000000000000000000 
+	Parameter KI_VALUE bound to: 32'b00111110000000000000000000000000 
+	Parameter KD_VALUE bound to: 32'b00000000000000000000000000000000 
+	Parameter TS_VALUE bound to: 32'b00111100001000111101011100001010 
+INFO: [Synth 8-3491] module 'vm_add_sub' declared at 'C:/Facultate/Anul3/SSC/Proiect/rear_and_avoidance/rear_and_avoidance.srcs/sources_1/new/vm_add_sub.vhd:5' bound to instance 'ADD_UNIT' of component 'vm_add_sub' [C:/Facultate/Anul3/SSC/Proiect/rear_and_avoidance/rear_and_avoidance.srcs/sources_1/new/pid_core.vhd:108]
+INFO: [Synth 8-638] synthesizing module 'vm_add_sub' [C:/Facultate/Anul3/SSC/Proiect/rear_and_avoidance/rear_and_avoidance.srcs/sources_1/new/vm_add_sub.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'vm_add_sub' (0#1) [C:/Facultate/Anul3/SSC/Proiect/rear_and_avoidance/rear_and_avoidance.srcs/sources_1/new/vm_add_sub.vhd:18]
+INFO: [Synth 8-3491] module 'vm_mul' declared at 'C:/Facultate/Anul3/SSC/Proiect/rear_and_avoidance/rear_and_avoidance.srcs/sources_1/new/vm_mul.vhd:5' bound to instance 'MUL_UNIT' of component 'vm_mul' [C:/Facultate/Anul3/SSC/Proiect/rear_and_avoidance/rear_and_avoidance.srcs/sources_1/new/pid_core.vhd:114]
+INFO: [Synth 8-638] synthesizing module 'vm_mul' [C:/Facultate/Anul3/SSC/Proiect/rear_and_avoidance/rear_and_avoidance.srcs/sources_1/new/vm_mul.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'vm_mul' (0#1) [C:/Facultate/Anul3/SSC/Proiect/rear_and_avoidance/rear_and_avoidance.srcs/sources_1/new/vm_mul.vhd:16]
+INFO: [Synth 8-3491] module 'vm_div' declared at 'C:/Facultate/Anul3/SSC/Proiect/rear_and_avoidance/rear_and_avoidance.srcs/sources_1/new/vm_div.vhd:5' bound to instance 'DIV_UNIT' of component 'vm_div' [C:/Facultate/Anul3/SSC/Proiect/rear_and_avoidance/rear_and_avoidance.srcs/sources_1/new/pid_core.vhd:120]
+INFO: [Synth 8-638] synthesizing module 'vm_div' [C:/Facultate/Anul3/SSC/Proiect/rear_and_avoidance/rear_and_avoidance.srcs/sources_1/new/vm_div.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'vm_div' (0#1) [C:/Facultate/Anul3/SSC/Proiect/rear_and_avoidance/rear_and_avoidance.srcs/sources_1/new/vm_div.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'pid_core' (0#1) [C:/Facultate/Anul3/SSC/Proiect/rear_and_avoidance/rear_and_avoidance.srcs/sources_1/new/pid_core.vhd:25]
+INFO: [Synth 8-3491] module 'fp_converter' declared at 'C:/Facultate/Anul3/SSC/Proiect/rear_and_avoidance/rear_and_avoidance.srcs/sources_1/new/fp_converter.vhd:5' bound to instance 'conv_inst' of component 'fp_converter' [C:/Facultate/Anul3/SSC/Proiect/rear_and_avoidance/rear_and_avoidance.srcs/sources_1/new/top.vhd:83]
+INFO: [Synth 8-638] synthesizing module 'fp_converter' [C:/Facultate/Anul3/SSC/Proiect/rear_and_avoidance/rear_and_avoidance.srcs/sources_1/new/fp_converter.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'fp_converter' (0#1) [C:/Facultate/Anul3/SSC/Proiect/rear_and_avoidance/rear_and_avoidance.srcs/sources_1/new/fp_converter.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'pid_controller' (0#1) [C:/Facultate/Anul3/SSC/Proiect/rear_and_avoidance/rear_and_avoidance.srcs/sources_1/new/top.vhd:23]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_pid_controller_0_0' (0#1) [c:/Facultate/Anul3/SSC/Proiect/rear_and_avoidance/rear_and_avoidance.gen/sources_1/bd/design_1/ip/design_1_pid_controller_0_0/synth/design_1_pid_controller_0_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element Q_reg was removed.  [C:/Facultate/Anul3/SSC/Proiect/rear_and_avoidance/rear_and_avoidance.srcs/sources_1/new/RestoringDivision.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element mantA_ext_reg was removed.  [C:/Facultate/Anul3/SSC/Proiect/rear_and_avoidance/rear_and_avoidance.srcs/sources_1/new/vm_div.vhd:85]
+WARNING: [Synth 8-7129] Port divisor[11] in module RestoringDivision is either unconnected or has no load
+WARNING: [Synth 8-7129] Port divisor[10] in module RestoringDivision is either unconnected or has no load
+WARNING: [Synth 8-7129] Port divisor[9] in module RestoringDivision is either unconnected or has no load
+WARNING: [Synth 8-7129] Port divisor[8] in module RestoringDivision is either unconnected or has no load
+WARNING: [Synth 8-7129] Port divisor[7] in module RestoringDivision is either unconnected or has no load
+WARNING: [Synth 8-7129] Port divisor[6] in module RestoringDivision is either unconnected or has no load
+WARNING: [Synth 8-7129] Port divisor[5] in module RestoringDivision is either unconnected or has no load
+WARNING: [Synth 8-7129] Port divisor[4] in module RestoringDivision is either unconnected or has no load
+WARNING: [Synth 8-7129] Port divisor[3] in module RestoringDivision is either unconnected or has no load
+WARNING: [Synth 8-7129] Port divisor[2] in module RestoringDivision is either unconnected or has no load
+WARNING: [Synth 8-7129] Port divisor[1] in module RestoringDivision is either unconnected or has no load
+WARNING: [Synth 8-7129] Port divisor[0] in module RestoringDivision is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1654.559 ; gain = 572.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1654.559 ; gain = 572.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1654.559 ; gain = 572.707
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 1654.559 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1754.914 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.092 . Memory (MB): peak = 1755.152 ; gain = 0.238
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1755.152 ; gain = 673.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1755.152 ; gain = 673.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1755.152 ; gain = 673.301
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'stare_reg' in module 'inmultitor_shift_add'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'RestoringDivision'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'vm_add_sub'
+WARNING: [Synth 8-3936] Found unconnected internal register 'final_exp_reg' and it is trimmed from '10' to '8' bits. [C:/Facultate/Anul3/SSC/Proiect/rear_and_avoidance/rear_and_avoidance.srcs/sources_1/new/vm_mul.vhd:111]
+WARNING: [Synth 8-3936] Found unconnected internal register 'expResult_reg' and it is trimmed from '10' to '8' bits. [C:/Facultate/Anul3/SSC/Proiect/rear_and_avoidance/rear_and_avoidance.srcs/sources_1/new/vm_mul.vhd:100]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mantNorm_temp_reg' and it is trimmed from '24' to '23' bits. [C:/Facultate/Anul3/SSC/Proiect/rear_and_avoidance/rear_and_avoidance.srcs/sources_1/new/vm_div.vhd:97]
+WARNING: [Synth 8-3936] Found unconnected internal register 'mantQuot_reg' and it is trimmed from '48' to '25' bits. [C:/Facultate/Anul3/SSC/Proiect/rear_and_avoidance/rear_and_avoidance.srcs/sources_1/new/vm_div.vhd:86]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'vm_div'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'pid_core'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'fp_converter'
+INFO: [Synth 8-802] inferred FSM for state register 'secv_reg' in module 'pid_controller'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               asteptare |                              001 |                               00
+                  calcul |                              010 |                               01
+              finalizare |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'stare_reg' using encoding 'one-hot' in module 'inmultitor_shift_add'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+             s_asteptare |                              001 |                               00
+                s_calcul |                              010 |                               01
+                 s_final |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'RestoringDivision'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              wait_state |                              000 |                              000
+            unpack_state |                              001 |                              001
+             align_state |                              010 |                              010
+          addition_state |                              011 |                              011
+         normalize_state |                              100 |                              100
+              pack_state |                              101 |                              101
+                  iSTATE |                              110 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'vm_add_sub'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0000 |                             0000
+                  unpack |                             0001 |                             0001
+           check_special |                             0010 |                             0010
+             divide_mant |                             0011 |                             0011
+                 sub_exp |                             0100 |                             0100
+               normalize |                             0101 |                             0101
+             round_stage |                             0110 |                             0110
+                    pack |                             0111 |                             0111
+                finished |                             1000 |                             1000
+                  iSTATE |                             1001 |                             1111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'vm_div'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0000 |                             0000
+              calc_error |                             0001 |                             0001
+                  calc_p |                             0010 |                             0010
+            calc_i_part1 |                             0011 |                             0011
+            calc_i_part2 |                             0100 |                             0100
+              calc_i_add |                             0101 |                             0101
+             calc_d_diff |                             0110 |                             0110
+              calc_d_mul |                             0111 |                             0111
+              calc_d_div |                             1000 |                             1000
+             calc_u_add1 |                             1001 |                             1001
+             calc_u_add2 |                             1010 |                             1010
+            update_error |                             1011 |                             1011
+                finished |                             1100 |                             1100
+                  iSTATE |                             1101 |                             1111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'pid_core'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  c_idle |                            00001 |                              000
+          c_i2f_find_msb |                            00010 |                              001
+              c_i2f_pack |                            00100 |                              010
+            c_f2i_unpack |                            01000 |                              011
+            c_f2i_finish |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'fp_converter'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  s_idle |                          0000001 |                              000
+                   s_i2f |                          0000010 |                              001
+                   s_pid |                          0000100 |                              010
+                   s_f2i |                          0001000 |                              011
+                   s_pwm |                          0010000 |                              100
+                  s_done |                          0100000 |                              101
+                  iSTATE |                          1000000 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'secv_reg' using encoding 'one-hot' in module 'pid_controller'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1755.152 ; gain = 673.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input   31 Bit       Adders := 1     
+	   3 Input   29 Bit       Adders := 1     
+	   2 Input   25 Bit       Adders := 1     
+	   2 Input   23 Bit       Adders := 1     
+	   2 Input   13 Bit       Adders := 1     
+	   3 Input   10 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 1     
+	   3 Input    9 Bit       Adders := 1     
+	   3 Input    8 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 2     
+	   2 Input    6 Bit       Adders := 1     
+	   3 Input    5 Bit       Adders := 2     
+	   2 Input    5 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 3     
++---Registers : 
+	               48 Bit    Registers := 1     
+	               32 Bit    Registers := 16    
+	               29 Bit    Registers := 1     
+	               28 Bit    Registers := 2     
+	               25 Bit    Registers := 5     
+	               24 Bit    Registers := 2     
+	               23 Bit    Registers := 4     
+	               18 Bit    Registers := 1     
+	               13 Bit    Registers := 2     
+	               12 Bit    Registers := 3     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 3     
+	                8 Bit    Registers := 8     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 28    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 8     
+	   8 Input   32 Bit        Muxes := 1     
+	  10 Input   32 Bit        Muxes := 1     
+	  14 Input   32 Bit        Muxes := 4     
+	   5 Input   32 Bit        Muxes := 1     
+	   2 Input   31 Bit        Muxes := 1     
+	   2 Input   29 Bit        Muxes := 6     
+	   7 Input   29 Bit        Muxes := 1     
+	   7 Input   28 Bit        Muxes := 2     
+	   3 Input   25 Bit        Muxes := 3     
+	   2 Input   24 Bit        Muxes := 4     
+	   2 Input   23 Bit        Muxes := 5     
+	   2 Input   13 Bit        Muxes := 1     
+	   3 Input   13 Bit        Muxes := 1     
+	   3 Input   12 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 1     
+	  10 Input   10 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 3     
+	   7 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 1     
+	   6 Input    7 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 3     
+	   7 Input    5 Bit        Muxes := 1     
+	   5 Input    5 Bit        Muxes := 1     
+	   3 Input    4 Bit        Muxes := 2     
+	  15 Input    4 Bit        Muxes := 1     
+	  13 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 1     
+	   6 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 5     
+	   8 Input    3 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 13    
+	   3 Input    1 Bit        Muxes := 8     
+	   7 Input    1 Bit        Muxes := 15    
+	   8 Input    1 Bit        Muxes := 7     
+	  10 Input    1 Bit        Muxes := 9     
+	  14 Input    1 Bit        Muxes := 15    
+	   5 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3936] Found unconnected internal register 'div_inst/quotient_reg' and it is trimmed from '12' to '8' bits. [C:/Facultate/Anul3/SSC/Proiect/rear_and_avoidance/rear_and_avoidance.srcs/sources_1/new/RestoringDivision.vhd:108]
+DSP Report: Generating DSP high_time, operation Mode is: (C:0x1e848)+(A:0x1ea)*B.
+DSP Report: operator high_time is absorbed into DSP high_time.
+DSP Report: operator high_time0 is absorbed into DSP high_time.
+WARNING: [Synth 8-3936] Found unconnected internal register 'MUL_UNIT/mantProd_reg' and it is trimmed from '48' to '31' bits. [C:/Facultate/Anul3/SSC/Proiect/rear_and_avoidance/rear_and_avoidance.srcs/sources_1/new/vm_mul.vhd:97]
+WARNING: [Synth 8-3936] Found unconnected internal register 'MUL_UNIT/mantProd_reg' and it is trimmed from '48' to '17' bits. [C:/Facultate/Anul3/SSC/Proiect/rear_and_avoidance/rear_and_avoidance.srcs/sources_1/new/vm_mul.vhd:97]
+DSP Report: Generating DSP MUL_UNIT/mantProd0, operation Mode is: A2*B2.
+DSP Report: register MUL_UNIT/mantProd0 is absorbed into DSP MUL_UNIT/mantProd0.
+DSP Report: register MUL_UNIT/mantProd0 is absorbed into DSP MUL_UNIT/mantProd0.
+DSP Report: operator MUL_UNIT/mantProd0 is absorbed into DSP MUL_UNIT/mantProd0.
+DSP Report: operator MUL_UNIT/mantProd0 is absorbed into DSP MUL_UNIT/mantProd0.
+DSP Report: Generating DSP MUL_UNIT/mantProd_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register MUL_UNIT/mantProd_reg is absorbed into DSP MUL_UNIT/mantProd_reg.
+DSP Report: register MUL_UNIT/mantProd_reg is absorbed into DSP MUL_UNIT/mantProd_reg.
+DSP Report: register MUL_UNIT/mantProd_reg is absorbed into DSP MUL_UNIT/mantProd_reg.
+DSP Report: operator MUL_UNIT/mantProd0 is absorbed into DSP MUL_UNIT/mantProd_reg.
+DSP Report: operator MUL_UNIT/mantProd0 is absorbed into DSP MUL_UNIT/mantProd_reg.
+WARNING: [Synth 8-3332] Sequential element (MUL_UNIT/mantProd_reg[16]) is unused and will be removed from module pid_core.
+WARNING: [Synth 8-3332] Sequential element (MUL_UNIT/mantProd_reg[15]) is unused and will be removed from module pid_core.
+WARNING: [Synth 8-3332] Sequential element (MUL_UNIT/mantProd_reg[14]) is unused and will be removed from module pid_core.
+WARNING: [Synth 8-3332] Sequential element (MUL_UNIT/mantProd_reg[13]) is unused and will be removed from module pid_core.
+WARNING: [Synth 8-3332] Sequential element (MUL_UNIT/mantProd_reg[12]) is unused and will be removed from module pid_core.
+WARNING: [Synth 8-3332] Sequential element (MUL_UNIT/mantProd_reg[11]) is unused and will be removed from module pid_core.
+WARNING: [Synth 8-3332] Sequential element (MUL_UNIT/mantProd_reg[10]) is unused and will be removed from module pid_core.
+WARNING: [Synth 8-3332] Sequential element (MUL_UNIT/mantProd_reg[9]) is unused and will be removed from module pid_core.
+WARNING: [Synth 8-3332] Sequential element (MUL_UNIT/mantProd_reg[8]) is unused and will be removed from module pid_core.
+WARNING: [Synth 8-3332] Sequential element (MUL_UNIT/mantProd_reg[7]) is unused and will be removed from module pid_core.
+WARNING: [Synth 8-3332] Sequential element (MUL_UNIT/mantProd_reg[6]) is unused and will be removed from module pid_core.
+WARNING: [Synth 8-3332] Sequential element (MUL_UNIT/mantProd_reg[5]) is unused and will be removed from module pid_core.
+WARNING: [Synth 8-3332] Sequential element (MUL_UNIT/mantProd_reg[4]) is unused and will be removed from module pid_core.
+WARNING: [Synth 8-3332] Sequential element (MUL_UNIT/mantProd_reg[3]) is unused and will be removed from module pid_core.
+WARNING: [Synth 8-3332] Sequential element (MUL_UNIT/mantProd_reg[2]) is unused and will be removed from module pid_core.
+WARNING: [Synth 8-3332] Sequential element (MUL_UNIT/mantProd_reg[1]) is unused and will be removed from module pid_core.
+WARNING: [Synth 8-3332] Sequential element (MUL_UNIT/mantProd_reg[0]) is unused and will be removed from module pid_core.
+INFO: [Synth 8-3332] Sequential element (inst/FSM_onehot_secv_reg[6]) is unused and will be removed from module design_1_pid_controller_0_0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 1755.152 ; gain = 673.301
+---------------------------------------------------------------------------------
+ Sort Area is  MUL_UNIT/mantProd0_2 : 0 0 : 3489 4867 : Used 1 time 0
+ Sort Area is  MUL_UNIT/mantProd0_2 : 0 1 : 1378 4867 : Used 1 time 0
+ Sort Area is  high_time_0 : 0 0 : 439 439 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++--------------+-------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name   | DSP Mapping             | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------+-------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|servo_pwm_gen | (C:0x1e848)+(A:0x1ea)*B | 8      | 18     | 18     | -      | 18     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|pid_core      | A2*B2                   | 25     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|pid_core      | (PCIN>>17)+A2*B2        | 25     | 8      | -      | -      | 31     | 1    | 1    | -    | -    | -     | 0    | 1    | 
++--------------+-------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:47 ; elapsed = 00:00:52 . Memory (MB): peak = 1755.152 ; gain = 673.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:47 ; elapsed = 00:00:53 . Memory (MB): peak = 1755.152 ; gain = 673.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:48 ; elapsed = 00:00:54 . Memory (MB): peak = 1755.152 ; gain = 673.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:54 ; elapsed = 00:01:00 . Memory (MB): peak = 1755.152 ; gain = 673.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:54 ; elapsed = 00:01:00 . Memory (MB): peak = 1755.152 ; gain = 673.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:54 ; elapsed = 00:01:00 . Memory (MB): peak = 1755.152 ; gain = 673.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:54 ; elapsed = 00:01:00 . Memory (MB): peak = 1755.152 ; gain = 673.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:54 ; elapsed = 00:01:00 . Memory (MB): peak = 1755.152 ; gain = 673.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:54 ; elapsed = 00:01:00 . Memory (MB): peak = 1755.152 ; gain = 673.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++--------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name   | DSP Mapping       | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|pid_core      | A'*B''            | 24     | 17     | -      | -      | 48     | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|pid_core      | (PCIN>>17+A'*B')' | 24     | 7      | -      | -      | 31     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|servo_pwm_gen | C+A'*B            | 8      | 9      | 17     | -      | 18     | 1    | 0    | 0    | -    | -     | 0    | 0    | 
++--------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |   392|
+|2     |DSP48E1 |     3|
+|5     |LUT1    |    86|
+|6     |LUT2    |   245|
+|7     |LUT3    |  1271|
+|8     |LUT4    |   290|
+|9     |LUT5    |   366|
+|10    |LUT6    |   445|
+|11    |MUXF7   |    34|
+|12    |FDCE    |   294|
+|13    |FDPE    |     4|
+|14    |FDRE    |   771|
+|15    |FDSE    |     8|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:54 ; elapsed = 00:01:00 . Memory (MB): peak = 1755.152 ; gain = 673.301
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 25 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:42 ; elapsed = 00:00:57 . Memory (MB): peak = 1755.152 ; gain = 572.707
+Synthesis Optimization Complete : Time (s): cpu = 00:00:54 ; elapsed = 00:01:00 . Memory (MB): peak = 1755.152 ; gain = 673.301
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 1755.152 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 429 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1755.152 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: c1b2753b
+INFO: [Common 17-83] Releasing license: Synthesis
+65 Infos, 39 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:02 ; elapsed = 00:01:31 . Memory (MB): peak = 1755.152 ; gain = 1086.703
+INFO: [Coretcl 2-1174] Renamed 10 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1755.152 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Facultate/Anul3/SSC/Proiect/rear_and_avoidance/rear_and_avoidance.runs/design_1_pid_controller_0_0_synth_1/design_1_pid_controller_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_pid_controller_0_0_utilization_synth.rpt -pb design_1_pid_controller_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Jan 21 10:39:47 2026...

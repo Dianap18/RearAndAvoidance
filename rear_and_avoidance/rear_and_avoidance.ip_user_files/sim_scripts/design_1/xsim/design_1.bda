@@ -190,42 +190,6 @@
             },
             "V3": {
                 "VT": "AC",
-                "BA": "0x41200000",
-                "HA": "0x4120FFFF",
-                "BP": "C_BASEADDR",
-                "HP": "C_HIGHADDR",
-                "MA": "Data",
-                "MX": "/processing_system7_0",
-                "MI": "M_AXI_GP0",
-                "MS": "SEG_axi_gpio_A_Reg",
-                "MV": "xilinx.com:ip:processing_system7:5.5",
-                "SX": "/axi_gpio_A",
-                "SI": "S_AXI",
-                "SS": "Reg",
-                "SV": "xilinx.com:ip:axi_gpio:2.0",
-                "TM": "both",
-                "TU": "register"
-            },
-            "V4": {
-                "VT": "AC",
-                "BA": "0x41210000",
-                "HA": "0x4121FFFF",
-                "BP": "C_BASEADDR",
-                "HP": "C_HIGHADDR",
-                "MA": "Data",
-                "MX": "/processing_system7_0",
-                "MI": "M_AXI_GP0",
-                "MS": "SEG_axi_gpio_B_Reg",
-                "MV": "xilinx.com:ip:processing_system7:5.5",
-                "SX": "/axi_gpio_B",
-                "SI": "S_AXI",
-                "SS": "Reg",
-                "SV": "xilinx.com:ip:axi_gpio:2.0",
-                "TM": "both",
-                "TU": "register"
-            },
-            "V5": {
-                "VT": "AC",
                 "BA": "0x41220000",
                 "HA": "0x4122FFFF",
                 "BP": "C_BASEADDR",
@@ -242,43 +206,7 @@
                 "TM": "both",
                 "TU": "register"
             },
-            "V6": {
-                "VT": "AC",
-                "BA": "0x41230000",
-                "HA": "0x4123FFFF",
-                "BP": "C_BASEADDR",
-                "HP": "C_HIGHADDR",
-                "MA": "Data",
-                "MX": "/processing_system7_0",
-                "MI": "M_AXI_GP0",
-                "MS": "SEG_axi_gpio_fp_done_Reg",
-                "MV": "xilinx.com:ip:processing_system7:5.5",
-                "SX": "/axi_gpio_fp_done",
-                "SI": "S_AXI",
-                "SS": "Reg",
-                "SV": "xilinx.com:ip:axi_gpio:2.0",
-                "TM": "both",
-                "TU": "register"
-            },
-            "V7": {
-                "VT": "AC",
-                "BA": "0x41240000",
-                "HA": "0x4124FFFF",
-                "BP": "C_BASEADDR",
-                "HP": "C_HIGHADDR",
-                "MA": "Data",
-                "MX": "/processing_system7_0",
-                "MI": "M_AXI_GP0",
-                "MS": "SEG_axi_gpio_fp_result_Reg",
-                "MV": "xilinx.com:ip:processing_system7:5.5",
-                "SX": "/axi_gpio_fp_result",
-                "SI": "S_AXI",
-                "SS": "Reg",
-                "SV": "xilinx.com:ip:axi_gpio:2.0",
-                "TM": "both",
-                "TU": "register"
-            },
-            "V8": {
+            "V4": {
                 "VT": "AC",
                 "BA": "0x41250000",
                 "HA": "0x4125FFFF",
@@ -296,7 +224,7 @@
                 "TM": "both",
                 "TU": "register"
             },
-            "V9": {
+            "V5": {
                 "VT": "AC",
                 "BA": "0x41260000",
                 "HA": "0x4126FFFF",
@@ -314,7 +242,7 @@
                 "TM": "both",
                 "TU": "register"
             },
-            "V10": {
+            "V6": {
                 "VT": "AC",
                 "BA": "0x41270000",
                 "HA": "0x4127FFFF",
@@ -332,25 +260,7 @@
                 "TM": "both",
                 "TU": "register"
             },
-            "V11": {
-                "VT": "AC",
-                "BA": "0x41280000",
-                "HA": "0x4128FFFF",
-                "BP": "C_BASEADDR",
-                "HP": "C_HIGHADDR",
-                "MA": "Data",
-                "MX": "/processing_system7_0",
-                "MI": "M_AXI_GP0",
-                "MS": "SEG_axi_gpio_subtract_Reg",
-                "MV": "xilinx.com:ip:processing_system7:5.5",
-                "SX": "/axi_gpio_subtract",
-                "SI": "S_AXI",
-                "SS": "Reg",
-                "SV": "xilinx.com:ip:axi_gpio:2.0",
-                "TM": "both",
-                "TU": "register"
-            },
-            "V12": {
+            "V7": {
                 "VT": "AC",
                 "BA": "0x41290000",
                 "HA": "0x4129FFFF",
@@ -368,7 +278,7 @@
                 "TM": "both",
                 "TU": "register"
             },
-            "V13": {
+            "V8": {
                 "VT": "AC",
                 "BA": "0x412A0000",
                 "HA": "0x412AFFFF",
@@ -386,7 +296,7 @@
                 "TM": "both",
                 "TU": "register"
             },
-            "V14": {
+            "V9": {
                 "VT": "AC",
                 "BA": "0x412B0000",
                 "HA": "0x412BFFFF",
@@ -404,7 +314,7 @@
                 "TM": "both",
                 "TU": "register"
             },
-            "V15": {
+            "V10": {
                 "VT": "AC",
                 "BA": "0x43C00000",
                 "HA": "0x43C0FFFF",
@@ -469,31 +379,6 @@
             },
             {
                 "src": "V10",
-                "trg": "V2",
-                "EH": "2"
-            },
-            {
-                "src": "V11",
-                "trg": "V2",
-                "EH": "2"
-            },
-            {
-                "src": "V12",
-                "trg": "V2",
-                "EH": "2"
-            },
-            {
-                "src": "V13",
-                "trg": "V2",
-                "EH": "2"
-            },
-            {
-                "src": "V14",
-                "trg": "V2",
-                "EH": "2"
-            },
-            {
-                "src": "V15",
                 "trg": "V2",
                 "EH": "2"
             }

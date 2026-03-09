@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../rear_and_avoidance.srcs/sources_1/new/pid_core.vhd" \
+"../../../../rear_and_avoidance.srcs/sources_1/new/vm_add_sub.vhd" \
+"../../../../rear_and_avoidance.srcs/sources_1/new/vm_div.vhd" \
+"../../../../rear_and_avoidance.srcs/sources_1/new/vm_mul.vhd" \
+"../../../../rear_and_avoidance.srcs/sim_1/new/tb_pid_core.vhd" \
+
+# Do not sort compile order
+nosort
